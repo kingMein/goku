@@ -12,13 +12,14 @@ jobs:
     - name: Загрузка Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/webdevtest0/AkatsukiRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/webdevtest0/AkatsukiRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/loop.bat -OutFile loop.bat
     - name: Загрузка программ.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/webdevtest0/AkatsukiRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/webdevtest0/AkatsukiRDP/main/launcher/FastConfigVPS_v2.3.exe -OutFile "FastConfigVPS_v2.3.exe"
-        Invoke-WebRequest https://raw.githubusercontent.com/webdevtest0/AkatsukiRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/launcher/FastConfigVPS_v2.3.exe -OutFile "FastConfigVPS_v2.3.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/white-hackers/VDS/main/launcher/Site%Rest-Zone.url -OutFile "Site Rest-Zone.url"
     - name: Загрузка Ngrok файла.
       run: Expand-Archive ngrok.zip
     - name: Подключение к учётной записи Ngrok.
@@ -33,6 +34,7 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "FastConfigVPS_v2.3.exe" "C:\Users\Public\Desktop\FastConfigVPS_v2.3.exe"
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
+        copy "Site Rest-Zone.url" "C:\Users\Public\Desktop\Site Rest-Zone.url"
     - name: Создание туннелей.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Подключение к CPU 2 - 7 ГБ оперативной памяти - 256 SSD.
