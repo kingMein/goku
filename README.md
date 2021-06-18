@@ -10,7 +10,7 @@
 ### Как создать RDP 
 ```
 > Инструкция тут: 
-> Наш сайт тут: https://rest-zone.ru/
+> Наш сайт тут: <a href="https://rest-zone.ru/">тест</a>
 > Канал в телеграмме тут: https://t.me/restzona1
 > Ютуб канал тут: https://www.youtube.com/channel/UCeXwIEbkZUMCcsv7j525UOQ
 > Я в соц. сеть RZ тут: https://rest-zone.ru/Hidden
