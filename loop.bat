@@ -4,5 +4,5 @@ tasklist | find /i "ngrok.exe" >Nul && goto check || echo "Unable to get NGROK t
 :check
 ping 127.0.0.1 > nul
 cls
-echo ПОЛУЧАЙТЕ БЕСПЛАТНЫЕ ПРОГРАММЫ ТОЛЬКО НА САЙТЕ REST-ZONE.RU https://rest-zone.ru/ 
+echo Site REST-ZONE.RU https://rest-zone.ru/ 
 goto check
