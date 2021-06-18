@@ -9,7 +9,7 @@
 
 ### Как создать RDP 
 ```
-> Инструкция тут: 
+> Инструкция тут: https://rest-zone.ru/read-blog/76_besplatno-poluchaem-vds-server-windows-ot-github.html
 > Наш сайт тут: https://rest-zone.ru/
 > Канал в телеграмме тут: https://t.me/restzona1
 > Ютуб канал тут: https://www.youtube.com/channel/UCeXwIEbkZUMCcsv7j525UOQ
